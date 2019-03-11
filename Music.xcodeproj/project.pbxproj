@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D78B81290DE878709E024FE /* libPods-Music.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C91B12B2F98143917C3D904 /* libPods-Music.a */; };
 		A72E2F4C22369E40006473EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A72E2F4B22369E40006473EE /* AppDelegate.m */; };
 		A72E2F4F22369E40006473EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A72E2F4E22369E40006473EE /* ViewController.m */; };
 		A72E2F5222369E40006473EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72E2F5022369E40006473EE /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		A72E2F5A22369E43006473EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A72E2F5922369E43006473EE /* main.m */; };
 		A72E2F6422369E43006473EE /* MusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72E2F6322369E43006473EE /* MusicTests.m */; };
 		A72E2F6F22369E43006473EE /* MusicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72E2F6E22369E43006473EE /* MusicUITests.m */; };
+		A72E2F7D22369F38006473EE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A72E2F7C22369F37006473EE /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C91B12B2F98143917C3D904 /* libPods-Music.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Music.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E1EBB61750EC77C731053F5 /* Pods-Music.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Music.release.xcconfig"; path = "Pods/Target Support Files/Pods-Music/Pods-Music.release.xcconfig"; sourceTree = "<group>"; };
 		A72E2F4722369E40006473EE /* Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Music.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72E2F4A22369E40006473EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A72E2F4B22369E40006473EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		A72E2F6A22369E43006473EE /* MusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72E2F6E22369E43006473EE /* MusicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicUITests.m; sourceTree = "<group>"; };
 		A72E2F7022369E43006473EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A72E2F7C22369F37006473EE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E7D50F2C3BED41C9D47AEC9D /* Pods-Music.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Music.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Music/Pods-Music.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D78B81290DE878709E024FE /* libPods-Music.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +85,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63C860F8B40EDB3584F00FFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C91B12B2F98143917C3D904 /* libPods-Music.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2F72038C16008A6F9797F52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7D50F2C3BED41C9D47AEC9D /* Pods-Music.debug.xcconfig */,
+				9E1EBB61750EC77C731053F5 /* Pods-Music.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A72E2F3E22369E40006473EE = {
 			isa = PBXGroup;
 			children = (
+				A72E2F7C22369F37006473EE /* Podfile */,
 				A72E2F4922369E40006473EE /* Music */,
 				A72E2F6222369E43006473EE /* MusicTests */,
 				A72E2F6D22369E43006473EE /* MusicUITests */,
 				A72E2F4822369E40006473EE /* Products */,
+				A2F72038C16008A6F9797F52 /* Pods */,
+				63C860F8B40EDB3584F00FFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A72E2F7322369E43006473EE /* Build configuration list for PBXNativeTarget "Music" */;
 			buildPhases = (
+				CC8F84B37C66C41D737C3C75 /* [CP] Check Pods Manifest.lock */,
 				A72E2F4322369E40006473EE /* Sources */,
 				A72E2F4422369E40006473EE /* Frameworks */,
 				A72E2F4522369E40006473EE /* Resources */,
@@ -237,6 +265,7 @@
 			files = (
 				A72E2F5722369E43006473EE /* LaunchScreen.storyboard in Resources */,
 				A72E2F5422369E43006473EE /* Assets.xcassets in Resources */,
+				A72E2F7D22369F38006473EE /* Podfile in Resources */,
 				A72E2F5222369E40006473EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +285,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC8F84B37C66C41D737C3C75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Music-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A72E2F4322369E40006473EE /* Sources */ = {
@@ -433,6 +483,7 @@
 		};
 		A72E2F7422369E43006473EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7D50F2C3BED41C9D47AEC9D /* Pods-Music.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +500,7 @@
 		};
 		A72E2F7522369E43006473EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E1EBB61750EC77C731053F5 /* Pods-Music.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
